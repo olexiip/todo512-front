@@ -1,0 +1,213 @@
+body {
+    background-color: rgb(70, 70, 75);
+}
+input {
+    width: 100%;
+    padding: 1%;
+    padding-left: 9px;
+    /*margin: 2%;*/
+    margin-bottom: 4px;
+    border-radius: 6px;
+    border-width: 0px;
+    font-size: medium;
+}
+
+.login-form{
+    margin: 2px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: slategray;
+    width: 300px;
+}
+.login-button {
+    width: 100%;
+}
+.pass-wrapper {
+    position: relative;
+}
+.show-pass {
+    user-select: none;
+    font-size: smaller;
+    position: absolute;
+    top:5px;
+    right: 5px;
+}
+
+.bad-field{
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    background-color:darksalmon;
+}
+
+
+/*  */
+
+.listItem {
+    display: flex;
+    margin: 2px;
+    padding: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(161, 161, 161);
+    border-radius: 6px;
+    background-color: rgb(218, 207, 195);  
+}
+.user-item{
+    width: 40%;
+}
+.listItem-title-new{
+    width: auto;
+    display:inline-block;
+    margin-left: 5px;
+    
+}
+.listItem-title-done{
+    display:inline-block;
+    margin-left: 5px;
+    text-decoration: line-through;
+}
+.listItem-status{
+    display:inline-block;
+    margin-right: 9px;
+    
+}
+
+.checkbox-status{
+    transform: scale(1.5);
+}
+.listItem-buttons{
+    display:inline-block;
+    margin-left: auto;
+}
+.listItem-del{
+    display:inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-width: 1px;
+    border-radius: 11px;
+    background-color: rgb(255, 255, 255);
+}
+.listItem-edit{
+    display:inline-block;
+    margin-right: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-width: 1px;
+    border-radius: 11px;
+    background-color: rgb(255, 255, 255);
+}
+.listItem-share{
+    display:inline-block;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-width: 1px;
+    border-radius: 11px;
+    background-color: rgb(255, 255, 255);
+}
+.green{
+    background-color: rgb(174, 235, 193);
+}
+ /*  */
+
+ .List {
+    margin: 2px;
+    padding: 1%;
+    border-radius: 8px;
+    background-color: rgb(235, 224, 211);
+    width: 460px;
+}
+
+
+/* */
+
+.inputLogin {
+    width: 100%;
+    padding: 3px;
+    padding-left: 9px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    border-width: 0px;
+    font-size: medium;
+}
+/**/
+
+.header{
+    display: flex;
+    padding: 5px;
+    background-color: slategray;
+    width: 100%;
+}
+.logo{
+    margin-left:5px;
+    display:inline-block;;
+    background-color: aqua;
+}
+.auth-status{
+    display:inline-block;    
+    margin-left: 5px;
+    /*background-color: rgb(139, 192, 159);*/
+}
+.lang{
+    display:inline-block;
+    margin-left: auto;
+    background-color: rgb(140, 112, 219);
+
+}
+
+form {
+    border-radius: 4px;
+    background-color: rgb(235, 224, 211);
+}
+
+input[type="checkbox"].checbox-modal {
+    width: 20px;
+    margin-left: px;
+}
+
+.inputNewItem {  /* add new todo  > /todos */
+    padding: 3px;
+    padding-left: 9px;
+    margin-bottom: 2px;
+    border-radius: 4px;
+    border-width: 0px;
+    border-radius: 6px;
+    font-size: medium;
+    width: 48%;
+}
+/*.input-modal {
+    width: 100%;
+    padding: 3px;
+    padding-left: 9px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    border-width: 0px;
+    font-size: medium;
+}
+*/
+.menu{
+	width: 200px;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+button {
+    /* float: right; */
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: 2px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: rgb(161, 161, 161);
+    font-size: medium;
+}
+
+hr {
+    margin: 4px;
+}
+.small-user-email {
+    font-size: x-small;
+}

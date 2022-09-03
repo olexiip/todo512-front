@@ -1,0 +1,55 @@
+.listItem {
+    display: flex;
+    margin: 2px;
+    padding: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(161, 161, 161);
+    border-radius: 6px;
+    background-color: rgb(218, 207, 195);  
+}
+.listItem-title-new{
+    display:inline-block;
+    margin-left: 5px;
+}
+.listItem-title-done{
+    display:inline-block;
+    margin-left: 5px;
+    text-decoration: line-through;
+}
+.listItem-status{
+    display:inline-block;
+    margin-right: 9px;
+    margin-left: auto;
+}
+
+.checkbox-status{
+    transform: scale(1.5);
+}
+.listItem-del{
+    display:inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-width: 1px;
+    border-radius: 11px;
+    background-color: rgb(255, 255, 255);
+}
+.listItem-edit{
+    display:inline-block;
+    margin-right: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-width: 1px;
+    border-radius: 11px;
+    background-color: rgb(255, 255, 255);
+}
+.listItem-share{
+    display:inline-block;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-width: 1px;
+    border-radius: 11px;
+    background-color: rgb(255, 255, 255);
+}

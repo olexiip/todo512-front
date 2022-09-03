@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    padding: 5px;
+    background-color: slategray;
+    width: 100%;
+}
+.logo{
+    margin-left:5px;
+    display:inline-block;;
+    background-color: aqua;
+}
+.auth-status{
+    display:inline-block;    
+    margin-left: 5px;
+    background-color: rgb(139, 192, 159);
+}
+.lang{
+    display:inline-block;
+    margin-left: auto;
+    background-color: rgb(140, 112, 219);
+
+}
