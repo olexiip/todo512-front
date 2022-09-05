@@ -2,12 +2,11 @@ import axios from "axios";
 
 const useApi = () => {
     const apiURL = process.env.REACT_APP_BacEnd || `http://localhost:3001`;
-    console.log(apiURL);
     const refreshAuto = async () => {
 
             const oldToken = JSON.parse(localStorage.getItem("user")).accesToken;
-            console.log("old tokens");
-            console.log(oldToken);
+            //console.log("old tokens");
+            //console.log(oldToken);
 
             const newToken = await axios(`${apiURL}/auth/refresh`, {
                 method: "POST",
@@ -16,7 +15,7 @@ const useApi = () => {
 
             if (newToken?.data?.refreshToken) {
                 saveNewData(newToken.data);
-                console.log("refresh ok!")
+                //console.log("refresh ok!")
             } else {
                 console.log("refresh failed");
             }  
@@ -45,15 +44,14 @@ const useApi = () => {
             };
             
             const resp = await axios(`${apiURL}/${url}`, reqParams);    /////// send response
-            console.log(resp);
 
             if (resp.data?.res === "auth error2") {
-                console.log("need refresh token");
+                //console.log("need refresh token");
                 await refreshAuto();
                 reqParams.headers = {...headers, Authorization: `Bearer ${JSON.parse(localStorage.getItem("user"))?.accesToken}`};
                 const newToken = JSON.parse(localStorage.getItem("user")).accesToken;
-                console.log("newToken");
-                console.log(newToken);  
+                //console.log("newToken");
+                //console.log(newToken);  
                 const try2 = await axios(`${apiURL}/${url}`, reqParams);
                 return try2;
             }
