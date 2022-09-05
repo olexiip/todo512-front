@@ -2,7 +2,9 @@ import axios from "axios";
 
 const useApi = () => {
     const apiURL = process.env.BacEnd || `http://localhost:3001`;
+    const envx = process.env.BacEnd;
     console.log("apiURL: " + apiURL)
+    console.log(envx);
     const refreshAuto = async () => {
 
             const oldToken = JSON.parse(localStorage.getItem("user")).accesToken;
