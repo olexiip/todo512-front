@@ -2,6 +2,7 @@ import axios from "axios";
 
 const useApi = () => {
     const apiURL = process.env.REACT_APP_BacEnd || `localhost:3000`;
+    console.log(apiURL);
     const refreshAuto = async () => {
 
             const oldToken = JSON.parse(localStorage.getItem("user")).accesToken;
