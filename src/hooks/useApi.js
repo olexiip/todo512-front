@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const useApi = () => {
-    const apiURL = "https://" + (process.env.REACT_APP_BacEnd || `localhost:3001`);
+    const apiURL = process.env.REACT_APP_BacEnd || `http://localhost:3001`;
     console.log(apiURL);
     const refreshAuto = async () => {
 
