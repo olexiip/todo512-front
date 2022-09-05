@@ -25,14 +25,20 @@ const ListItem = (props)=>{
         if (props.owner === auth.storedData.user.id) {
             return (
             <div className="listItem"  >
-                <div 
-                    className={"listItem-title" + (props.status? " done" : " new")}
+                <div className={"listItem-title" + (props.status? " done" : " new")}
                     onClick={()=>props.showItemHandler(props._id)}
                 > 
                     {props.text}
                 </div>
                 <div className="listItem-buttons">
-                    <div className="listItem-status"><input type="checkbox"  className = "checkbox-status" defaultChecked={props.isComplited} onClick={()=>props.doneItem(props._id, props.isComplited)}/></div>
+                    <div className="listItem-status">
+                        <input 
+                            type="checkbox"  
+                            className = "checkbox-status" 
+                            defaultChecked={props.isComplited} 
+                            onClick={()=>props.doneItem(props._id, props.isComplited)}
+                        />
+                    </div>
                     <div className="listItem-edit" aria-disabled={isOvner} onClick={()=>props.editItemHandler(props._id, props.text)}>{locale.currLang.btns.edit}</div>
                     <div className={haredSryle(props)}  onClick={()=>props.ShareItemHandler(props._id, props.text)}>{locale.currLang.btns.share}</div>
                     <div className="listItem-del" onClick={()=>props.deleteItem(props._id)}>X</div>
@@ -41,11 +47,13 @@ const ListItem = (props)=>{
         }
 
         return (
-        <div className="listItem"  >
-        <div className={"listItem-title" + (props.status? " done" : " new")}> {props.text}</div>
-        <div className="listItem-status"><input type="checkbox"  className = "checkbox-status" defaultChecked={props.isComplited} onClick={()=>props.doneItem(props._id, props.isComplited)}/></div>
-        <div className="listItem-del" onClick={()=>props.deleteItem(props._id)}>X</div>
-    </div>
+        <div className="listItem">
+            <div className={"listItem-title" + (props.status? " done" : " new")}> {props.text}</div>
+            <div className="listItem-buttons">
+                <div className="listItem-status"><input type="checkbox"  className = "checkbox-status" defaultChecked={props.isComplited} onClick={()=>props.doneItem(props._id, props.isComplited)}/></div>
+                <div className="listItem-del" onClick={()=>props.deleteItem(props._id)}>X</div>
+            </div>
+        </div>
     );
     }
     //console.log(`owner ${isOvner()}`);
