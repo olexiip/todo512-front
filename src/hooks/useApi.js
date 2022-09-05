@@ -1,10 +1,7 @@
 import axios from "axios";
 
 const useApi = () => {
-    const apiURL = process.env.BacEnd || `https://todo512-b.herokuapp.com`;
-    const envx = process.env.BacEnd;
-    console.log("apiURL: " + apiURL)
-    console.log(process.env);
+    const apiURL = process.env.REACT_APP_BacEnd || `localhost:3000`;
     const refreshAuto = async () => {
 
             const oldToken = JSON.parse(localStorage.getItem("user")).accesToken;
