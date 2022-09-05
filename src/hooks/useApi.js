@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const useApi = () => {
-    const apiURL = process.env.REACT_APP_BacEnd || `localhost:3000`;
+    const apiURL = "http://" + (process.env.REACT_APP_BacEnd || `localhost:3001`);
     console.log(apiURL);
     const refreshAuto = async () => {
 
@@ -45,6 +45,7 @@ const useApi = () => {
             };
             
             const resp = await axios(`${apiURL}/${url}`, reqParams);    /////// send response
+            console.log(resp);
 
             if (resp.data?.res === "auth error2") {
                 console.log("need refresh token");
