@@ -34,7 +34,12 @@ jobs:
         uses: actions/configure-pages@v2
       - name: try3333333333333333
         run: echo "33333333333333333333333333"
+      - name: try-ls-la
+        run: ls -la
       - name: try44444444444444
+      - name: try3333333333333333
+        run: npm install
+      - name: try55555555555555
         run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
