@@ -32,11 +32,15 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v2
+      - name: try3333333333333333
+        run: echo "33333333333333333333333333"
+      - name: try44444444444444
+        run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: '.'
+          path: './build'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
