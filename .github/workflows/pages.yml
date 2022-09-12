@@ -35,6 +35,10 @@ jobs:
           source: ./
           destination: ./_site
           run: npm run build
+      - name: try ls -ls ---------
+        with:
+          source: ./
+          run: ls -la
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
