@@ -1,4 +1,6 @@
 # todo512-front
-todo front end
-deployed f&b here:
+todo app front end
+<br>
+розгорнуту програму з передньою та задньою частинами ви можете знайти тут:
+<br>
 https://todo512-f.herokuapp.com/
