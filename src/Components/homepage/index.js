@@ -1,46 +1,21 @@
-import { useAuth } from "../../hooks/useAuth";
-import { useState } from "react";
+//import { useAuth } from "../../hooks/useAuth";
 //import "./styles.css"
-import Header from "../../Components/header/index.js"
     
 const HomePage = () => {
     console.log(">>>Home page");
-    const auth = useAuth();
+    //const auth = useAuth();
 
-    //console.log("-------------------------------------------------------------");
-    //localStorage.setItem("1","1");
-    //console.log(localStorage);
-    //console.log(auth);
-    //console.log("---------------------------refres--------------------");
-    //localStorage.clear();
-    //console.log(auth);
-    //localStorage.setItem("1","2");
-
-
-    //const [state, newS] = useState(0);
-    //let kek = 0;
-
-
-
-
-    //const buttonHandler = () => {
-        //console.log("click!")
-    
-        //auth.refresh(prev++);
-        //let fff = state+1;
-        //console.log(fff);
-        //newS(fff);
-        //console.log(kek++);
-
-    //}
-    //console.log(kek);
-
-
-   
     return (<div>
                 <div>
                     <h2>Home page</h2>
-         
+                    <p>можете спробувати зареєструватися і війти під новим аккаунтом</p>
+                    <p>можете спробувати акаунт з правами адміна, логін admin та пароль admin</p>
+                    <p>можна створити свії тудушки, поділитися ними з іншими зареєстрованими користувачами,</p>
+                    <p>якщо ви знаєте їх пошту.</p>
+                    <p>Адміністратори мають додатковий розділ, там можна дивитися список всіх користувачів, 
+                        список всіх тутушок, а також, додавати, редагувати, видаляти, ділитися та переглядати 
+                        більше властивостей.</p>
+                    <p></p>
                 </div>
             </div>
             
