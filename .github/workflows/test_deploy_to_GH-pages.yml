@@ -38,8 +38,12 @@ jobs:
         run: ls -la
       - name: try3333333333333333
         run: npm install
+      - name: try-ls-la
+        run: ls -la
       - name: try55555555555555
         run: npm run build
+      - name: try-ls-la
+        run: ls -la
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
