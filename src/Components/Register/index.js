@@ -1,4 +1,4 @@
-import { useAuth } from "../../hooks/useAuth";
+//import { useAuth } from "../../hooks/useAuth";
 import { useState } from "react";
 import useApi from "../../hooks/useApi.js"
 //import "./styles.css"
@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 const RegisterForm = () => {
     const api = useApi();
-    const auth = useAuth();
+    //const auth = useAuth();
     const navigate = useNavigate();
 
     const [currentFormFields, setNewFormFields] = useState({
@@ -31,9 +31,15 @@ const RegisterForm = () => {
         //auth.loginF({login : currentFormFields.userEmail, pass : currentFormFields.userPass})
         const req = await api.register(currentFormFields);
         console.log(req.data.user);
-        if (req.data.user.id) {
+        if (req.data?.user?.id) {
+            alert("ok)");
             navigate("/login", {replace: true});
+            return [];
         }
+        if (req.data?.res=== "email already in use") {
+            return alert("email already in use");
+        }
+        alert("some error((");
         //console.log(req.data);
 
     }
