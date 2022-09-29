@@ -4,7 +4,7 @@ const useApi = () => {
     const apiURL = process.env.REACT_APP_BacEnd || `http://localhost:3001`;
     const refreshAuto = async () => {
 
-            const oldToken = JSON.parse(localStorage.getItem("user")).accesToken;
+            //const oldToken = JSON.parse(localStorage.getItem("user")).accesToken;
             //console.log("old tokens");
             //console.log(oldToken);
 
@@ -49,7 +49,7 @@ const useApi = () => {
                 //console.log("need refresh token");
                 await refreshAuto();
                 reqParams.headers = {...headers, Authorization: `Bearer ${JSON.parse(localStorage.getItem("user"))?.accesToken}`};
-                const newToken = JSON.parse(localStorage.getItem("user")).accesToken;
+                //const newToken = JSON.parse(localStorage.getItem("user")).accesToken;
                 //console.log("newToken");
                 //console.log(newToken);  
                 const try2 = await axios(`${apiURL}/${url}`, reqParams);
